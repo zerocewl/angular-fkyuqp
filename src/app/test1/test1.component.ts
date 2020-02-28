@@ -8,6 +8,8 @@ import {CommonService} from '../common.service';
 })
 export class Test1Component implements OnInit {
 
+  gridId = "gridId2";
+
   constructor(private common: CommonService) {
   }
 

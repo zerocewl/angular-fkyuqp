@@ -1,4 +1,4 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit, Input} from '@angular/core';
 import {AngularGridInstance, Column, GridOption} from 'angular-slickgrid';
 import {CommonService} from '../common.service';
 
@@ -13,8 +13,9 @@ export class HomeComponent implements OnInit {
   gridOptions1: GridOption;
   dataset1: any[];
 
+  @Input() gridId: string;
 
-  constructor(private common: CommonService) {
+  constructor() {
 
   }
 
